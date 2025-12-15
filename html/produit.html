@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopii - Nike Air Force 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .product-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .product-images {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .product-image-main {
+            height: 400px;
+            background: #f8fafc;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border: 2px dashed #d1d5db;
+        }
+        
+        .product-details {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .product-title {
+            font-size: 36px;
+            color: #000;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        .product-price {
+            font-size: 32px;
+            color: #2563eb;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+        
+        .sizes-container {
+            margin: 30px 0;
+        }
+        
+        .size-label {
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+            color: #000;
+            font-size: 18px;
+        }
+        
+        .size-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .size-btn {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #d1d5db;
+            background: white;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+        
+        .size-btn:hover {
+            border-color: #00FF26;
+        }
+        
+        .size-btn.active {
+            background: #00FF26;
+            color: #000;
+            border-color: #00FF26;
+        }
+        
+        .buy-btn {
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            margin: 30px 0;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+        
+        .buy-btn:hover {
+            background: #1d4ed8;
+        }
+        
+        .product-specs {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e7eb;
+        }
+        
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .spec-label {
+            font-weight: 600;
+            color: #4b5563;
+        }
+        
+        .spec-value {
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .video-section {
+            grid-column: 1 / -1;
+            margin-top: 60px;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .video-title {
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-top: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #f3f4f6;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: #e5e7eb;
+        }
+        
+        @media (max-width: 900px) {
+            .product-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">SHOPII</a>
+            <div class="nav-menu">
+                <a href="apropos.html">À propos</a>
+                <a href="aide.html">Aide</a>
+                <a href="connexion.html">Connexion</a>
+                <a href="inscription.html" class="btn-signup">S'inscrire</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            
+            <div class="product-images">
+                <div class="product-image-main">
+    <img src="images/airforce1.png" alt="Nike Air Force 1" style="max-width: 100%; max-height: 100%;">
+                </div>
+                </div>
+                <div style="text-align: center; color: #6b7280;">
+                    <p>Nike Air Force 1 - Blanc</p>
+                </div>
+            </div>
+            
+        
+            <div class="product-details">
+                <h1 class="product-title">Nike Air Force 1</h1>
+                <div class="product-price">140$</div>
+                
+                <div class="sizes-container">
+                    <span class="size-label">Tailles disponibles :</span>
+                    <div class="size-buttons" id="sizeButtons">
+                        
+                    </div>
+                </div>
+                
+                <button class="buy-btn" id="buyButton">
+                    <i class="fas fa-shopping-cart"></i> Acheter maintenant pour 140$
+                </button>
+                
+                <div class="product-specs">
+                    <h3 style="margin-bottom: 25px; color: #000; font-size: 24px;">Détails du produit</h3>
+                    <div class="spec-item">
+                        <span class="spec-label">Couleur :</span>
+                        <span class="spec-value">Blanc</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Prix de détail :</span>
+                        <span class="spec-value">130$</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Date de sortie :</span>
+                        <span class="spec-value">01/01/2015</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Disponibilité :</span>
+                        <span class="spec-value" style="color: #10b981;">En stock</span>
+                    </div>
+                </div>
+            </div>
+            
+            <
+            <div class="video-section">
+                <h2 class="video-title"><i class="fab fa-youtube" style="color: #ff0000;"></i> Vidéo du produit</h2>
+                <p>Découvrez les Nike Air Force 1</p>
+                
+                <div class="video-container">
+                    
+                    <iframe 
+                        src="https://www.youtube.com/embed/IqgBn7sT6vI" 
+                        title="Nike Air Force 1 - Vidéo produit" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Retour aux produits
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Shopii. Tous droits réservés.</p>
+        <p style="margin-bottom: 5px;">Email : shopii@gmail.com</p>
+        <p>Téléphone : (438) 900-8903</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

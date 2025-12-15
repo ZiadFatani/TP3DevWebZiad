@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopii - Inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .signup-container {
+            max-width: 500px;
+            margin: 80px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        
+        .signup-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .signup-title {
+            font-size: 32px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #000;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #00FF26;
+            box-shadow: 0 0 0 3px rgba(0, 255, 38, 0.1);
+        }
+        
+        .form-group input.valid {
+            border-color: #10b981;
+        }
+        
+        .form-group input.invalid {
+            border-color: #ef4444;
+        }
+        
+        .error-message {
+            color: #ef4444;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        .show-password {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .show-password input[type="checkbox"] {
+            width: auto;
+        }
+        
+        .signup-btn {
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .signup-btn:hover {
+            background: #1d4ed8;
+        }
+        
+        .signup-links {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .signup-links a {
+            color: #2563eb;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        
+        .signup-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .current-page {
+            color: #00FF26 !important;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">SHOPII</a>
+            <div class="nav-menu">
+                <a href="apropos.html">À propos</a>
+                <a href="aide.html">Aide</a>
+                <a href="connexion.html">Connexion</a>
+                <a href="inscription.html" class="btn-signup current-page">S'inscrire</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="signup-container">
+            <div class="signup-header">
+                <h1 class="signup-title"><i class="fas fa-user-plus"></i> Créer un compte</h1>
+                <p style="color: #6b7280;">Rejoignez Shopii aujourd'hui</p>
+            </div>
+            
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" placeholder="Choisissez un nom d'utilisateur" required>
+                    <div class="error-message" id="usernameError">Le nom d'utilisateur doit avoir au moins 3 caractères</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    <div class="error-message" id="emailError">Veuillez entrer une adresse email valide</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+                    <div class="error-message" id="passwordError">Le mot de passe doit avoir au moins 6 caractères</div>
+                </div>
+                
+                <div class="show-password">
+                    <input type="checkbox" id="showPassword">
+                    <label for="showPassword">Afficher le mot de passe</label>
+                </div>
+                
+                <button type="submit" class="signup-btn">S'inscrire</button>
+            </form>
+            
+            <div class="signup-links">
+                <p>Déjà un compte ? <a href="connexion.html">Connectez-vous ici</a></p>
+                <p><a href="index.html"><i class="fas fa-home"></i> Retour à l'accueil</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Shopii. Tous droits réservés.</p>
+        <p style="margin-bottom: 5px;">Email : shopii@gmail.com</p>
+        <p>Téléphone : (438) 900-8903</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

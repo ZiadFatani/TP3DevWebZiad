@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopii - À propos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        
+        .about-hero {
+            background: linear-gradient(135deg, #00FF26, #00cc20);
+            color: #000;
+            padding: 80px 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .about-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+        
+        .about-text {
+            background: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .about-text h2 {
+            color: #000;
+            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: 800;
+        }
+        
+        .about-text p {
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-size: 17px;
+        }
+        
+        .mission-section {
+            background: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .mission-title {
+            color: #000;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+        }
+        
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .mission-card {
+            text-align: center;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-top: 4px solid #00FF26;
+        }
+        
+        .mission-card i {
+            font-size: 40px;
+            color: #00FF26;
+            margin-bottom: 20px;
+        }
+        
+        .mission-card h3 {
+            color: #000;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .map-section {
+            margin: 80px 0;
+            background: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .map-title {
+            color: #000;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+        }
+        
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .contact-card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .contact-card i {
+            font-size: 36px;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            color: #000;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .current-page {
+            color: #00FF26 !important;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-hero h1 {
+                font-size: 36px;
+            }
+            
+            .about-text, .mission-section, .map-section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">SHOPII</a>
+            <div class="nav-menu">
+                <a href="apropos.html" class="current-page">À propos</a>
+                <a href="aide.html">Aide</a>
+                <a href="connexion.html">Connexion</a>
+                <a href="inscription.html" class="btn-signup">S'inscrire</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+           
+            <div class="about-hero">
+                <h1>À propos de Shopii</h1>
+                <p style="font-size: 22px; max-width: 800px; margin: 0 auto; font-weight: 500;">
+                    La meilleure marketplace de vêtements actuels. Notre mission est de fournir un accès aux articles populaires en un seul endroit.
+                </p>
+            </div>
+            
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Notre histoire</h2>
+                    <p>
+                        Fondée en 2025, Shopii est née d'une idée simple : créer une marketplace transparente 
+                        et fluide pour les passionnés de mode.
+                    </p>
+                    <p>
+                        Aujourd'hui, nous connectons les acheteurs avec des vendeurs de confiance du monde entier.
+                    </p>
+                    <p>
+                        Notre plateforme garantit des transactions sécurisées, des prix transparents et 
+                        une expédition mondiale vers plus de 100 pays.
+                    </p>
+                </div>
+                
+                <div class="about-text">
+                    <h2>Notre vision</h2>
+                    <p>
+                        Nous croyons en une mode accessible à tous, sans compromis sur la qualité ou l'authenticité.
+                    </p>
+                    <p>
+                        Notre objectif est de révolutionner l'expérience d'achat en ligne en offrant :
+                    </p>
+                    <ul style="color: #4b5563; line-height: 1.8; padding-left: 20px; margin-top: 20px;">
+                        <li>Une sélection rigoureuse des meilleurs articles</li>
+                        <li>Une vérification stricte de l'authenticité</li>
+                        <li>Un service client disponible 24h/7j</li>
+                        <li>Une expérience utilisateur intuitive</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="mission-section">
+                <h2 class="mission-title">Pourquoi choisir Shopii ?</h2>
+                
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Expédition mondiale</h3>
+                        <p>Livraison rapide vers plus de 100 pays avec suivi en temps réel.</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Paiements sécurisés</h3>
+                        <p>Transactions cryptées et protection acheteur sur chaque achat.</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <i class="fas fa-tags"></i>
+                        <h3>Meilleurs prix</h3>
+                        <p>Notre algorithme garantit que vous obtenez les articles à leur juste valeur.</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Support 24/7</h3>
+                        <p>Équipe de service client dédiée toujours prête à vous aider.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="map-section">
+                <h2 class="map-title"><i class="fas fa-map-marker-alt"></i> Visitez notre magasin</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: #6b7280; font-size: 18px;">
+                    Venez visiter notre magasin principal à Montréal
+                </p>
+                
+                <div class="map-container">
+                    
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.674490042334!2d-73.5680359242219!3d45.52201207107236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70c%3A0x654e3138211fefef!2sMontr%C3%A9al%2C%20QC%2C%20Canada!5e0!3m2!1sen!2s!4v1741903997970!5m2!1sen!2s" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Adresse</h3>
+                        <p>123 Rue Sainte-Catherine<br>Montréal, QC H3A 0A1</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Téléphone</h3>
+                        <p>(438) 900-8903</p>
+                        <small>Lun-Ven: 9h-17h</small>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>shopii@gmail.com</p>
+                        <small>Support 24h/7j</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Shopii. Tous droits réservés.</p>
+        <p style="margin-bottom: 5px;">Email : shopii@gmail.com</p>
+        <p>Téléphone : (438) 900-8903</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

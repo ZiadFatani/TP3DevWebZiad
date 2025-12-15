@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopii - La meilleure marketplace de vêtements</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        
+        .product-img {
+            max-width: 100%;
+            max-height: 220px;
+            object-fit: contain;
+            width: auto;
+            height: auto;
+        }
+        
+        .brand-logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 25px;
+            background-color: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            color: #00FF26;
+            margin-bottom: 20px;
+        }
+        
+        
+        .product-image {
+            height: 280px;
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">SHOPII</a>
+            <div class="nav-menu">
+                <a href="apropos.html">À propos</a>
+                <a href="aide.html">Aide</a>
+                <a href="connexion.html">Connexion</a>
+                <a href="inscription.html" class="btn-signup">S'inscrire</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section class="hero-section">
+            <h1 class="hero-title">Le meilleur vendeur de vêtements actuels</h1>
+            <p class="hero-subtitle">Notre mission est de fournir un accès aux articles populaires en un seul endroit.</p>
+            <a href="inscription.html" class="btn btn-large">Commencer à magasiner</a>
+        </section>
+
+        
+        <section class="section brands-section">
+            <h2 class="section-title">Marques populaires</h2>
+            <div class="brands-grid">
+                
+                <div class="brand-card">
+                    <img src="images/Jordan-Logo.png" alt="Logo Jordan" class="brand-logo">
+                    <p class="brand-name">Jordan</p>
+                </div>
+                
+                
+                <div class="brand-card">
+                    <img src="images/adidaslogo.png" alt="Logo Adidas" class="brand-logo">
+                    <p class="brand-name">Adidas</p>
+                </div>
+                
+                
+                <div class="brand-card">
+                    <img src="images/lv.png" alt="Logo Louis Vuitton" class="brand-logo">
+                    <p class="brand-name">Louis Vuitton</p>
+                </div>
+                
+                
+                <div class="brand-card">
+                    <img src="images/nike-4-logo-png-transparent.png" alt="Logo Nike" class="brand-logo">
+                    <p class="brand-name">Nike</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section trending-section">
+            <h2 class="section-title">Tendances actuelles</h2>
+            <div class="products-grid">
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/airforce1.png" alt="Nike Air Force 1" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Nike Air Force 1</h3>
+                        <p class="product-price">140$</p>
+                        <a href="produit.html" class="btn" style="width: 100%;">Voir le produit</a>
+                    </div>
+                </div>
+                
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/png-transparent-air-force-air-jordan-nike-sneakers-white-jordan-white-outdoor-shoe-sneakers.png" alt="Air Jordan Retro" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Air Jordan Retro</h3>
+                        <p class="product-price">170$</p>
+                        <button class="btn" style="width: 100%;">Voir le produit</button>
+                    </div>
+                </div>
+                
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/pngtree-air-jordan-4-shoes-png-image_14759212.png" alt="Air Jordan 4" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Air Jordan 4</h3>
+                        <p class="product-price">250$</p>
+                        <button class="btn" style="width: 100%;">Voir le produit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Accès mondial</h3>
+                    <p>Notre ligne d'expédition comprend plus de 100 pays</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Transactions sécurisées</h3>
+                    <p>Magasinez tous vos vêtements souhaités en toute tranquillité</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Prix transparents</h3>
+                    <p>Notre système garantit que vous obtenez vos articles au juste prix</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Shopii. Tous droits réservés.</p>
+        <p style="margin-bottom: 5px;">Email : shopii@gmail.com</p>
+        <p>Téléphone : (438) 900-8903</p>
+        <div style="margin-top: 30px;">
+            <a href="apropos.html" style="color: #cbd5e1; margin: 0 15px;">À propos</a>
+            <a href="aide.html" style="color: #cbd5e1; margin: 0 15px;">Aide</a>
+            <a href="connexion.html" style="color: #cbd5e1; margin: 0 15px;">Connexion</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
